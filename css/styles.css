@@ -1,0 +1,639 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+}
+
+/* Top Navbar */
+
+.top-navbar {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.top-navbar .navbar-brand img {
+  height: 40px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 450px;
+}
+
+.search-box .form-control {
+  border: none;
+  box-shadow: none;
+  width: 450px;
+}
+
+.search-box .btn-search {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 0.8rem;
+}
+
+.top-navbar .d-flex a,
+.top-navbar .d-flex span {
+  color: #555;
+  font-size: 1rem;
+}
+
+.top-navbar .d-flex i {
+  font-size: 1.2rem;
+  margin-right: 5px;
+}
+
+.top-navbar .d-flex .fa-shopping-cart {
+  color: #333;
+}
+
+.telephone {
+  color: #000;
+  font-family: Oswald;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.icon-container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.icon-wrapper {
+  position: relative;
+  font-size: 24px;
+  color: #000;
+}
+
+.badge {
+  position: absolute;
+  top: -3px;
+  right: -7px;
+  background-color: #f37021;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: bold;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+/* Main Navbar */
+.main-navbar {
+  background-color: #005a8d;
+}
+
+.main-navbar .nav-link {
+  color: #FFF;
+  font-family: Rubik;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.34px;
+  text-transform: uppercase;
+}
+
+.main-navbar .nav-link:hover {
+  color: #ff6600;
+}
+
+
+/* Hero Section Styling */
+.hero-section {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.02) 30.8%, rgba(0, 0, 0, 0.00) 99.9%), #E8F5FD;
+  height: 100vh;
+}
+
+.carousel-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.75rem;
+  min-height: 80vh;
+}
+
+.carousel-text {
+  max-width: 50%;
+}
+
+.carousel-text .small-text {
+  color: #000;
+  font-family: Rubik;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.carousel-text h2 {
+  color: #1176AE;
+  text-shadow: 0px 4px 2px rgba(255, 255, 255, 0.25);
+  font-family: Rubik;
+  font-size: 62px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.carousel-text .btn-orange {
+  width: 180px;
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  background: #F16126;
+  color: var(--ffffff, #FFF);
+  text-align: center;
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  align-content: center;
+}
+
+.carousel-text .btn-orange:hover {
+  background-color: #e65c00;
+}
+
+.carousel-image {
+  width: 100%;
+  object-fit: contain;
+}
+
+/* Carousel Control Styling */
+.custom-control .carousel-control-prev-icon,
+.custom-control .carousel-control-next-icon {
+  background-color: #f37021;
+  /* Customize arrow background to match design */
+  border-radius: 50%;
+  padding: 10px;
+  color: white;
+}
+
+.carousel-control-prev-icon::after,
+.carousel-control-next-icon::after {
+  font-size: 1.5rem;
+}
+
+
+/* Categories Section Styling */
+.categories-section {
+  background-color: #f9f9fb;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.section-title {
+  color: #000;
+  font-family: Rubik;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.62px;
+  text-transform: uppercase;
+}
+
+.bg-light-blue {
+  background-color: #e0f4fc;
+}
+
+.bg-light-peach {
+  background-color: #fce8e0;
+}
+
+.bg-light-beige {
+  background-color: #f5f3ef;
+}
+
+/* Category Item Styling */
+.category-item {
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.category-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.category-title {
+  color: #000;
+  text-align: center;
+  font-family: Rubik;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1.26px;
+  text-transform: uppercase;
+}
+
+
+/* Product  Styling */
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-card .card-header {
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+}
+
+.product-card .card-header i {
+  color: #f37021;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.product-card img {
+  padding: 10px;
+  height: 200px;
+  object-fit: contain;
+}
+
+.product-card .category {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #666;
+  text-transform: uppercase;
+}
+
+.product-card .product-name {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #333;
+  margin: 10px 0;
+  min-height: 40px;
+  line-height: 1.2;
+}
+
+.product-card .price {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.current-price {
+  color: #1176AE;
+  font-family: Rubik;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.original-price {
+  color: rgba(0, 0, 0, 0.50);
+  font-family: Rubik;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration-line: strikethrough;
+  text-transform: uppercase;
+}
+
+/* Add to Cart Button */
+.product-card .btn-link {
+  color: #007bff;
+}
+
+.product-card .btn-link:hover {
+  color: #0056b3;
+}
+
+.products-button {
+  color: #FFF;
+  text-align: center;
+  font-family: "PT Sans";
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.34px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  border: none;
+  background: #F16126;
+  padding: 20px;
+}
+
+
+/* Electronics Section Styling */
+.mobile-accessories-section {
+  background: #FDEDE7;
+}
+
+.electronics-section {
+  background: #EAE7E2;
+  border-radius: 8px;
+  padding: 0rem 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.category-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  text-transform: uppercase;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.electronics-section .category-image {
+  object-fit: contain;
+  margin-top: 1rem;
+  margin-right: -20px;
+}
+
+.pattern {
+  background-image: url('../imgaes/logo\ bg.svg');
+  background-size: contain;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  opacity: 0.3;
+}
+
+.pattern-1 {
+  top: 20px;
+  left: 30px;
+  transform: rotate(20deg) scale(1.2);
+}
+
+.pattern-2 {
+  top: 80px;
+  left: 200px;
+  transform: rotate(-30deg) scale(0.8);
+}
+
+.pattern-3 {
+  bottom: 20px;
+  left: 100px;
+  transform: rotate(45deg) scale(1.1);
+}
+
+.pattern-4 {
+  bottom: 60px;
+  right: 30px;
+  transform: rotate(-15deg) scale(0.9);
+}
+
+
+/* Information Section Styling */
+.info-section {
+  background-color: #1176AE;
+  /* Exact blue background color */
+}
+
+.info-box {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.bg-orange {
+  background-color: #f37021;
+  height: 66px;
+  width: 50px;
+}
+
+.info-title {
+  color: #FFF;
+  font-family: Rubik;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.99px;
+  text-transform: uppercase;
+}
+
+.info-description {
+  font-size: 0.875rem;
+  margin: 0;
+  color: #ffffff;
+}
+
+
+/* Footer Section */
+
+.footer {
+  background-color: #000;
+  color: #fff;
+}
+
+.footer h5 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.footer .social-icons a {
+  font-size: 1.25rem;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.footer .social-icons a:hover {
+  color: #ff6600;
+}
+
+.footer ul {
+  padding: 0;
+  list-style: none;
+}
+
+.footer ul li a {
+  color: #bbb;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer ul li a:hover {
+  color: #fff;
+}
+
+.footer .copy {
+  color: #ABABAB;
+  font-family: Rubik;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.footer img {
+  max-width: 200px;
+  height: auto;
+  display: inline-block;
+}
+
+.footer .row+.row {
+  border-top: 1px solid #333;
+  margin-top: 2rem;
+  padding-top: 1rem;
+}
+
+.footer-section {
+  background-color: #1e1e1e;
+  /* Dark background for footer */
+  color: #fff;
+}
+
+.footer-section h6 {
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.footer-section a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  color: #007bff;
+}
+
+.social-icons i {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.social-icons i:hover {
+  color: #f37021;
+}
+
+footer .text-md-start,
+footer .text-md-end {
+  color: #ccc;
+}
+
+
+@media (max-width: 567px) {
+
+  .search-box {
+    width: 60%;
+  }
+
+  .search-box .form-control {
+    width: 100%;
+
+  }
+
+  .icon-container {
+    gap: 15px;
+  }
+
+  .carousel-content {
+    flex-wrap: wrap;
+    justify-content: start;
+    margin: 0px 20px;
+  }
+
+  .hero-section {
+    min-height: fit-content;
+  }
+
+  .category-title {
+    width: 100%;
+  }
+
+  .category-item-accessories {
+    flex-wrap: wrap !important;
+  }
+
+  .products-button {
+    width: 100%;
+  }
+
+  .footer-bottom {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .navbar-collapse {
+    background-color: white;
+  }
+
+  .navbar-nav .nav-link {
+    color: #333;
+    font-weight: 500;
+    padding: 10px;
+  }
+
+  .navbar-nav .nav-link:hover {
+    color: #007bff;
+  }
+
+  .icon-container a {
+    color: #333;
+    position: relative;
+  }
+
+  .badge {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: #f37021;
+    color: #fff;
+    font-size: 0.75rem;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

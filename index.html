@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Store</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header Start -->
+    <header>
+        <!-- Top Navigation Bar -->
+        <nav class="navbar top-navbar py-2">
+            <div class="container d-flex justify-content-between align-items-center">
+                <!-- Logo and Search Bar -->
+                <div class="d-flex align-items-center">
+                    <!-- Logo -->
+                    <a class="navbar-brand me-3" href="#">
+                        <img src="./imgaes/digital store logo.png" alt="Digital Store Logo">
+                    </a>
+                    <!-- Search Box -->
+                    <div class="search-box d-flex">
+                        <input type="text" class="form-control" placeholder="Search for products"
+                            aria-label="Search for products">
+                        <button class="btn btn-search" aria-label="Search">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Social Icons and Contact Info -->
+                <div class="d-none d-lg-flex align-items-center"> <!-- Visible on large screens and above -->
+                    <a href="#" class="me-2" aria-label="Facebook"><img src="./imgaes/facebook.svg"
+                            alt="Facebook Icon"></a>
+                    <a href="#" class="me-2" aria-label="Twitter"><img src="./imgaes/twitter.svg"
+                            alt="Twitter Icon"></a>
+                    <a href="#" class="me-2" aria-label="Instagram"><img src="./imgaes/instagram.svg"
+                            alt="Instagram Icon"></a>
+                    <a href="#" class="me-3" aria-label="YouTube"><img src="./imgaes/youtube-icon.svg"
+                            alt="YouTube Icon"></a>
+                    <span class="telephone me-3"><img src="./imgaes/telephone.png" alt="Phone Icon"> +971 5123
+                        4567</span>
+                    <span class="me-3"><img src="./imgaes/UAE flag.png" alt="UAE Flag"> عربي</span>
+
+                    <!-- User, Wishlist, and Cart Icons with Badges -->
+                    <div class="icon-container">
+                        <div aria-label="User Profile">
+                            <img src="./imgaes/user.png" alt="User Icon">
+                        </div>
+                        <div class="icon-wrapper position-relative" aria-label="Wishlist">
+                            <img src="./imgaes/favorite.png" alt="Wishlist Icon">
+                            <span class="badge">0</span>
+                        </div>
+                        <div class="icon-wrapper position-relative" aria-label="Shopping Cart">
+                            <img src="./imgaes/cart.png" alt="Cart Icon">
+                            <span class="badge">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Navigation Bar with Toggler for Mobile -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light main-navbar">
+            <div class="container">
+
+                <!-- Toggler Button for Collapsible Navbar -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Collapsible Nav Menu -->
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav main-nav">
+                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Mobiles</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Mobile Accessories</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Tablets</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Smart Watches</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Electronics</a></li>
+                    </ul>
+                </div>
+
+                <!-- Icons for Mobile View (appear in navbar on small screens) -->
+                <div class="d-lg-none d-flex align-items-center"> <!-- Visible on small screens and below -->
+                    <a href="#" class="me-2" aria-label="User Profile"><img src="./imgaes/user.png" alt="User Icon"></a>
+                    <a href="#" class="me-2 position-relative" aria-label="Wishlist">
+                        <img src="./imgaes/favorite.png" alt="Wishlist Icon">
+                        <span class="badge">0</span>
+                    </a>
+                    <a href="#" class="me-2 position-relative" aria-label="Shopping Cart">
+                        <img src="./imgaes/cart.png" alt="Cart Icon">
+                        <span class="badge">0</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Header End -->
+    <main>
+        <!-- Start Hero Section -->
+        <section class="hero-section">
+            <div id="mobileCollectionCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner container">
+                    <div class="carousel-item active">
+                        <div class="carousel-content d-flex align-items-center">
+                            <div class="carousel-text">
+                                <p class="small-text">Mobile Collection</p>
+                                <h2>MOBILE COLLECTION</h2>
+                                <a class="btn btn-orange">Shop Now</a>
+                            </div>
+                            <div class="img-container">
+                                <img src="./imgaes/hero.png" class="carousel-image"
+                                    alt="Latest mobile collection on display" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carousel Controls with descriptive SVG icons -->
+                <button class="carousel-control-prev custom-control" type="button"
+                    data-bs-target="#mobileCollectionCarousel" data-bs-slide="prev" aria-label="Previous slide">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 55 55" fill="none">
+                        <circle cx="27.5" cy="27.5" r="23.5" transform="rotate(-180 27.5 27.5)" fill="#F16126" />
+                        <circle cx="27.5" cy="27.5" r="26.5" transform="rotate(-180 27.5 27.5)" stroke="#F16126"
+                            stroke-width="2" />
+                        <path
+                            d="M21.4032 26.5101L30.8927 17.0207C31.3504 16.563 32.0924 16.563 32.55 17.0207L33.6568 18.1275C34.1136 18.5843 34.1145 19.3248 33.6587 19.7828L26.1382 27.3387L33.6587 34.8946C34.1145 35.3526 34.1136 36.0931 33.6568 36.55L32.55 37.6568C32.0923 38.1144 31.3503 38.1144 30.8927 37.6568L21.4033 28.1673C20.9456 27.7097 20.9456 26.9677 21.4032 26.5101Z"
+                            fill="white" />
+                    </svg>
+                </button>
+                <button class="carousel-control-next custom-control" type="button"
+                    data-bs-target="#mobileCollectionCarousel" data-bs-slide="next" aria-label="Next slide">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 55 55" fill="none">
+                        <circle cx="27.5" cy="27.5" r="23.5" fill="#F16126" />
+                        <circle cx="27.5" cy="27.5" r="26.5" stroke="#F16126" stroke-width="2" />
+                        <path
+                            d="M33.5968 28.4899L24.1073 37.9793C23.6496 38.437 22.9076 38.437 22.45 37.9793L21.3432 36.8725C20.8864 36.4157 20.8855 35.6752 21.3413 35.2172L28.8618 27.6613L21.3413 20.1054C20.8855 19.6474 20.8864 18.9069 21.3432 18.45L22.45 17.3432C22.9077 16.8856 23.6497 16.8856 24.1073 17.3432L33.5967 26.8327C34.0544 27.2903 34.0544 28.0323 33.5968 28.4899Z"
+                            fill="white" />
+                    </svg>
+                </button>
+            </div>
+        </section>
+        <!-- End Hero Section -->
+
+        <!-- Start Categories Section -->
+        <section class="categories-section py-5">
+            <div class="container">
+                <h2 class="section-title mb-4">Our Categories</h2>
+                <div class="row g-3">
+                    <!-- Mobile Category -->
+                    <div class="col-md-5">
+                        <div class="category-item bg-light-blue position-relative">
+                            <img src="./imgaes/mobile.png" alt="Mobile Category" class="img-fluid category-image">
+                            <h3 class="category-title text-center">Mobile</h3>
+                        </div>
+                    </div>
+
+                    <!-- Other Categories (Right Column) -->
+                    <div class="col-md-7">
+                        <div class="row g-3">
+                            <!-- Mobile Accessories -->
+                            <div class="col-12">
+                                <div
+                                    class="d-flex category-item-accessories flex-nowrap justify-content-between align-items-center p-5 bg-light-peach position-relative">
+                                    <div class="col-md-3 col-sm-12">
+                                        <h3 class="category-title text-center">Mobile Accessories</h3>
+                                    </div>
+                                    <div class="col-md-7 col-sm-12">
+                                        <img src="./imgaes/mobile accessories.png" alt="Mobile Accessories Category"
+                                            class="img-fluid mt-2 category-image">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Electronics -->
+                            <div class="col-12">
+                                <div
+                                    class="d-flex category-item-accessories flex-nowrap justify-content-between align-items-center pt-5 ps-5 bg-light-peach position-relative">
+                                    <div class="col-md-3 col-sm-12">
+                                        <h3 class="category-title text-center">Electronics</h3>
+                                    </div>
+                                    <div class="col-md-7 col-sm-12">
+                                        <img src="./imgaes/Electronics .png" alt="Electronics Category"
+                                            class="img-fluid mt-4 category-image">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Categories Section -->
+
+        <!-- Start Mobile Collections Section -->
+        <section class="mobile-collections-section py-5">
+            <div class="container">
+                <h2 class="section-title mb-4">Mobile Collections</h2>
+                <div class="row g-3" id="mobile-collections-container">
+                    <!-- Product cards are generated here dynamically with JavaScript -->
+                </div>
+                <div class="d-flex justify-content-center align-items-center m-3 mt-5">
+                    <button class="products-button" aria-label="View more mobile products">More products</button>
+                </div>
+            </div>
+        </section>
+        <!-- End Mobile Collections Section -->
+
+        <!-- start Mobile Accessories   -->
+        <section class="mobile-accessories-section py-5">
+            <div class="container position-relative">
+                <div class="pattern pattern-1"></div>
+                <div class="pattern pattern-2"></div>
+                <div class="pattern pattern-3"></div>
+                <div class="pattern pattern-4"></div>
+
+                <div class="row align-items-center justify-content-around mx-5">
+                    <div class="col-md-4 text-center text-md-start">
+                        <h3 class="category-title">Mobile Accessories</h3>
+                    </div>
+                    <div class="col-md-8 text-end ">
+                        <img src="./imgaes/Mobile Accessories (2).png" alt="Electronics Products"
+                            class="img-fluid category-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end Mobile Accessories  -->
+        <!--  start Mobile Accessories Collections -->
+        <section class="mobile-collections-section py-5">
+            <div class="container">
+                <h2 class="section-title mb-4">Mobile Accessories</h2>
+                <div class="row g-3" id="mobile-accessories-cards-container">
+                </div>
+                <div class="d-flex justify-content-center align-items-center m-3 mt-5">
+                    <button class="products-button">More products</button>
+                </div>
+            </div>
+        </section>
+        <!-- end   Mobile Accessories-->
+        <!-- start Electronics Section -->
+        <section class="electronics-section py-5">
+            <div class="container position-relative">
+                <div class="pattern pattern-1"></div>
+                <div class="pattern pattern-2"></div>
+                <div class="pattern pattern-3"></div>
+                <div class="pattern pattern-4"></div>
+
+                <div class="row align-items-center justify-content-around mx-5">
+                    <div class="col-md-4 text-center text-md-start">
+                        <h3 class="category-title">Electronics</h3>
+                    </div>
+                    <div class="col-md-8 text-end ">
+                        <img src="./imgaes/Electronics ad.png" alt="Electronics Products"
+                            class="img-fluid category-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end Electronics  -->
+        <!--  start Mobile Collections -->
+        <section class="mobile-collections-section py-5">
+            <div class="container">
+                <h2 class="section-title mb-4">Electronics</h2>
+                <div class="row g-3" id="product-cards-container">
+
+                </div>
+                <div class="d-flex justify-content-center align-items-center m-3 mt-5">
+                    <button class="products-button">More products</button>
+                </div>
+            </div>
+        </section>
+        <!-- end Mobile Collections-->
+
+        <!-- Start Information Section -->
+        <section class="info-section py-4">
+            <div class="container">
+                <div class="row text-white text-center">
+                    <!-- Information Blocks -->
+                    <div class="col-md-4 mt-3">
+                        <div class="info-box d-flex align-items-center">
+                            <div class="icon bg-orange me-3">
+                                <i class="fas fa-award" aria-hidden="true"></i>
+                            </div>
+                            <div class="text-start">
+                                <h5 class="info-title">GRADED BY PROFESSIONALS</h5>
+                                <p class="info-description">Lorem Ipsum is simply dummy text of the printing and
+                                    typesetting...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mt-3">
+                        <div class="info-box d-flex align-items-center">
+                            <div class="icon bg-orange me-3">
+                                <img src="./imgaes/cash.svg" alt="cash">
+                            </div>
+                            <div class="text-start">
+                                <h5 class="info-title">THE LOWEST PRICE GUARANTEED</h5>
+                                <p class="info-description">Lorem Ipsum is simply dummy text of the printing and
+                                    typesetting...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mt-3">
+                        <div class="info-box d-flex align-items-center">
+                            <div class="icon bg-orange me-3">
+                                <img src="./imgaes/offers.svg" alt="offers">
+                            </div>
+                            <div class="text-start">
+                                <h5 class="info-title">OFFERS</h5>
+                                <p class="info-description">Exclusive Weekly Deals for Online Purchases Only</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Information Section -->
+    </main>
+
+    <!-- Start Footer Section -->
+    <footer class="footer bg-dark text-light py-5">
+        <div class="container">
+            <div class="row text-center text-md-start align-items-end">
+                <!-- Logo and Social Icons -->
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <a href="#" class="navbar-brand d-block text-light mb-3">
+                        <img src="./imgaes/footer_logo.png" alt="Digital Store Logo" class="mb-2" />
+                    </a>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><img src="./imgaes/facebook-footer.svg"
+                                alt="Facebook Icon"></a>
+                        <a href="#" aria-label="Twitter"><img src="./imgaes/twitter-footer.svg" alt="Twitter Icon"></a>
+                        <a href="#" aria-label="Instagram"><img src="./imgaes/instagram-footer.svg"
+                                alt="Instagram Icon"></a>
+                        <a href="#" aria-label="YouTube"><img src="./imgaes/youtube-footer.svg" alt="YouTube Icon"></a>
+                    </div>
+                </div>
+
+                <!-- Footer Links -->
+                <div class="col-md-2 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Home</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light">Home</a></li>
+                        <li><a href="#" class="text-light">About Us</a></li>
+                        <li><a href="#" class="text-light">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-2 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Products</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light">Mobile</a></li>
+                        <li><a href="#" class="text-light">Mobile Accessories</a></li>
+                        <li><a href="#" class="text-light">Electronics</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-2 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Customer Support</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light">Customer Services</a></li>
+                        <li><a href="#" class="text-light">FAQs</a></li>
+                        <li><a href="#" class="text-light">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 mb-4 mb-md-0">
+                    <h5 class="text-uppercase"></h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light">Privacy policy</a></li>
+                        <li><a href="#" class="text-light">Delivery policy</a></li>
+                        <li><a href="#" class="text-light">Refund policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom Section -->
+            <div class="row mt-4 align-items-baseline footer-bottom">
+                <div class="col-md-3 mt-3">
+                    <p class="copy">&copy; 2022 Digital Store. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 mt-3 text-md-center">
+                    <img src="./imgaes/payment-method 1.png" alt="Visa" class="me-2">
+                </div>
+                <div class="col-md-3 mt-3">
+                    <p class="copy">Website Design by: CANADA HITECH</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer Section -->
+
+    <!-- jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
