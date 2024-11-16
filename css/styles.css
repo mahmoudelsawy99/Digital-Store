@@ -93,7 +93,9 @@
 
 /* Main Navbar */
 .main-navbar {
-  background-color: #005a8d;
+  background-color: #005a8d !important ;
+
+  
 }
 
 .main-navbar .nav-link {
