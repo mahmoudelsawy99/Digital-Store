@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Store</title>
+    <link rel="shortcut icon" href="./imgaes/logo-tab.png" type="image/x-icon">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
@@ -17,7 +18,7 @@
 
 <body>
     <!-- Header Start -->
-    <header>
+ <header>
         <!-- Top Navigation Bar -->
         <nav class="navbar top-navbar py-2">
             <div class="container d-flex justify-content-between align-items-center">
@@ -28,13 +29,28 @@
                         <img src="./imgaes/digital store logo.png" alt="Digital Store Logo">
                     </a>
                     <!-- Search Box -->
-                    <div class="search-box d-flex">
-                        <input type="text" class="form-control" placeholder="Search for products"
-                            aria-label="Search for products">
+                    <div class="search-box d-flex d-none d-lg-flex">
+                        <input type="text" class="form-control" placeholder="Search for products" aria-label="Search for products">
                         <button class="btn btn-search" aria-label="Search">
                             <i class="fas fa-search"></i>
                         </button>
+                        
                     </div>
+                    
+                    <div class="icon-container d-flex d-lg-none">
+                        <div aria-label="User Profile">
+                            <img src="./imgaes/user.png" alt="User Icon">
+                        </div>
+                        <div class="icon-wrapper position-relative" aria-label="Wishlist">
+                            <img src="./imgaes/favorite.png" alt="Wishlist Icon">
+                            <span class="badge">0</span>
+                        </div>
+                        <div class="icon-wrapper position-relative" aria-label="Shopping Cart">
+                            <img src="./imgaes/cart.png" alt="Cart Icon">
+                            <span class="badge">0</span>
+                        </div>
+                    </div>
+                    
                 </div>
 
                 <!-- Social Icons and Contact Info -->
@@ -52,7 +68,7 @@
                     <span class="me-3"><img src="./imgaes/UAE flag.png" alt="UAE Flag"> عربي</span>
 
                     <!-- User, Wishlist, and Cart Icons with Badges -->
-                    <div class="icon-container">
+                    <div class="icon-container d-flex d-none d-lg-flex">
                         <div aria-label="User Profile">
                             <img src="./imgaes/user.png" alt="User Icon">
                         </div>
@@ -72,12 +88,18 @@
         <!-- Main Navigation Bar with Toggler for Mobile -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light main-navbar">
             <div class="container">
-
                 <!-- Toggler Button for Collapsible Navbar -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <div class="search-box w-full d-flex d-lg-none">
+                    <input type="text" class="form-control" placeholder="Search for products" aria-label="Search for products">
+                    <button class="btn btn-search" aria-label="Search">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                
 
                 <!-- Collapsible Nav Menu -->
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
@@ -90,28 +112,17 @@
                         <li class="nav-item"><a class="nav-link" href="#">Electronics</a></li>
                     </ul>
                 </div>
-
-                <!-- Icons for Mobile View (appear in navbar on small screens) -->
-                <div class="d-lg-none d-flex align-items-center"> <!-- Visible on small screens and below -->
-                    <a href="#" class="me-2" aria-label="User Profile"><img src="./imgaes/user.png" alt="User Icon"></a>
-                    <a href="#" class="me-2 position-relative" aria-label="Wishlist">
-                        <img src="./imgaes/favorite.png" alt="Wishlist Icon">
-                        <span class="badge">0</span>
-                    </a>
-                    <a href="#" class="me-2 position-relative" aria-label="Shopping Cart">
-                        <img src="./imgaes/cart.png" alt="Cart Icon">
-                        <span class="badge">0</span>
-                    </a>
-                </div>
+ 
             </div>
         </nav>
-    </header>
+    </header>   
     <!-- Header End -->
     <main>
         <!-- Start Hero Section -->
         <section class="hero-section">
             <div id="mobileCollectionCarousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner container">
+                    <!-- Slide 1 -->
                     <div class="carousel-item active">
                         <div class="carousel-content d-flex align-items-center">
                             <div class="carousel-text">
@@ -119,15 +130,43 @@
                                 <h2>MOBILE COLLECTION</h2>
                                 <a class="btn btn-orange">Shop Now</a>
                             </div>
-                            <div class="img-container">
-                                <img src="./imgaes/hero.png" class="carousel-image"
+                            <div class="img-container img-parent">
+                                <img src="./imgaes/hero.png" class="carousel-image "
                                     alt="Latest mobile collection on display" loading="lazy">
                             </div>
                         </div>
                     </div>
+                    <!-- Slide 2 -->
+                    <div class="carousel-item">
+                        <div class="carousel-content d-flex align-items-center">
+                            <div class="carousel-text">
+                                <p class="small-text">New Arrivals</p>
+                                <h2>NEW PHONES</h2>
+                                <a class="btn btn-orange">Shop Now</a>
+                            </div>
+                            <div class="img-container img-parent">
+                                <img src="./imgaes/Electronics .png" class="carousel-image "
+                                    alt="New phones collection on display" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="carousel-item">
+                        <div class="carousel-content d-flex align-items-center">
+                            <div class="carousel-text">
+                                <p class="small-text">Exclusive Deals</p>
+                                <h2>HOT DEALS</h2>
+                                <a class="btn btn-orange">Shop Now</a>
+                            </div>
+                            <div class="img-container img-parent">
+                                <img src="./imgaes/mobile accessories.png" class="carousel-image "
+                                    alt="Exclusive deals on mobile phones" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
-                <!-- Carousel Controls with descriptive SVG icons -->
+        
+                <!-- Carousel Controls -->
                 <button class="carousel-control-prev custom-control" type="button"
                     data-bs-target="#mobileCollectionCarousel" data-bs-slide="prev" aria-label="Previous slide">
                     <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 55 55" fill="none">
@@ -151,6 +190,7 @@
                 </button>
             </div>
         </section>
+        
         <!-- End Hero Section -->
 
         <!-- Start Categories Section -->

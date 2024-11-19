@@ -90,7 +90,7 @@ $(document).ready(function () {
   // Loop through the array and generate MobileCollections cards
   MobileCollections.forEach((product) => {
     const productCardHTML = `
-            <div class="col-6 col-md-4 col-lg-2">
+            <div class=" col-sm-12 col-md-4 col-lg-2">
                 <div class="card product-card">
                     <div class="card-header text-end">
                       <svg xmlns="http://www.w3.org/2000/svg" width="22" height="19" viewBox="0 0 22 19" fill="none">
@@ -207,7 +207,7 @@ $(document).ready(function () {
   // Loop through the array and generate MobileAccessories cards
   MobileAccessories.forEach((product) => {
     const productCardHTML = `
-                <div class="col-6 col-md-4 col-lg-2">
+                <div class=" col-sm-12 col-md-4 col-lg-2">
                     <div class="card product-card">
                         <div class="card-header text-end">
                           <svg xmlns="http://www.w3.org/2000/svg" width="22" height="19" viewBox="0 0 22 19" fill="none">
@@ -325,7 +325,7 @@ $(document).ready(function () {
   // Loop through the array and generate Electronics cards
   Electronics.forEach((product) => {
     const productCardHTML = `
-                <div class="col-6 col-md-4 col-lg-2">
+                <div class=" col-sm-12 col-md-4 col-lg-2">
                     <div class="card product-card">
                         <div class="card-header text-end">
                           <svg xmlns="http://www.w3.org/2000/svg" width="22" height="19" viewBox="0 0 22 19" fill="none">
@@ -351,4 +351,28 @@ $(document).ready(function () {
     // Append each generated card to the container
     $("#product-cards-container").append(productCardHTML);
   });
+
+
+     // Initialize the carousel
+    $('#mobileCollectionCarousel').carousel();
+
+    // Custom event handlers for next and previous controls
+    $('.carousel-control-next').click(function () {
+        $('#mobileCollectionCarousel').carousel('next');
+    });
+
+    $('.carousel-control-prev').click(function () {
+        $('#mobileCollectionCarousel').carousel('prev');
+    });
+
+    // Pause/Play on hover
+    $('#mobileCollectionCarousel').hover(
+        function () {
+            $(this).carousel('pause');
+        },
+        function () {
+            $(this).carousel('cycle');
+        }
+    );
+
 });
